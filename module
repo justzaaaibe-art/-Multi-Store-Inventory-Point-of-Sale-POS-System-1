@@ -1,0 +1,29 @@
+#ifndef SALESREPORT_H
+#define SALESREPORT_H
+#include <iostream>
+using namespace std;
+class Bill {
+private:
+ int billId;
+ double amount;
+ double tax;
+public:
+Bill(int id, double amt, double t) {
+    billId = id;
+    amount = amt;
+   tax = t;
+    }
+ ~Bill() {
+        cout << "Bill closed.\n";
+    }
+void setAmount(double amt) { amount = amt; }
+void setTax(double t) { tax = t; }
+int getBillId()
+{ 
+return billId; 
+}
+    double getFinalTotal()
+{
+return amount + tax;
+}
+};
