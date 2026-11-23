@@ -1,0 +1,23 @@
+class SalesReport {
+private:
+    int totalItemSold;
+    double totalRevenue;
+
+public:
+    SalesReport(int items, double rev) {
+        totalItemsSold = items;
+        totalRevenue = rev;
+    }
+
+    ~SalesReport() {
+        cout << "SalesReport closed.\n";
+    }
+
+    void setSales(int items, double rev) {
+        totalItemsSold = items;
+        totalRevenue = rev;
+    }
+
+    int getTotalItemsSold() { return totalItemsSold; }
+    double getTotalRevenue() { return totalRevenue; }
+};
