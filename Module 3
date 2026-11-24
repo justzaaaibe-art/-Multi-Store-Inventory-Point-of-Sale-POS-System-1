@@ -12,7 +12,7 @@ public:
     }
 
     ~PurchaseOrder() {
-        cout << "Purchase Order closed.\n";
+        cout << "Purchase Order closed\n";
     }
 
     void setOrderQty(int qty) { orderQty = qty; }
