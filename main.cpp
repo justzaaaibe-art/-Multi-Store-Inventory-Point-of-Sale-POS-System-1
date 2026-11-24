@@ -1,8 +1,3 @@
-#include "Product.h"
-#include "Bill.h"
-#include "PurchaseOrder.h"
-#include "Payment.h"
-#include "SalesReport.h"
 #include<iostream>
 using namespace std;
 
