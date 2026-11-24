@@ -1,5 +1,3 @@
-#ifndef SALESREPORT_H
-#define SALESREPORT_H
 #include <iostream>
 using namespace std;
 class Bill {
