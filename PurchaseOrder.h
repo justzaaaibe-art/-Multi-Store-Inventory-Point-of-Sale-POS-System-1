@@ -1,3 +1,10 @@
+#ifndef PURCHASEORDER_H
+#define PURCHASEORDER_H
+
+#include <iostream>
+#include <string>
+using namespace std;
+
 class PurchaseOrder {
 private:
     int poNumber;
@@ -12,7 +19,7 @@ public:
     }
 
     ~PurchaseOrder() {
-        cout << "Purchase Order closed\n";
+        cout << "Purchase Order closed.\n";
     }
 
     void setOrderQty(int qty) { orderQty = qty; }
@@ -21,3 +28,5 @@ public:
     string getSupplierName() { return supplierName; }
     int getOrderQty() { return orderQty; }
 };
+
+#endif
