@@ -1,3 +1,6 @@
+#ifndef PRODUCT_H
+#define PRODUCT_H
+
 #include <iostream>
 #include <string>
 using namespace std;
@@ -25,3 +28,5 @@ public:
     string getName() { return name; }
     int getStock() { return stock; }
 };
+
+#endif
