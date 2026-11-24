@@ -15,9 +15,9 @@ public:
         cout << "SalesReport closed.\n";
     }
 
-    void setSales(int items, double rev) {
+    void setSales(int items, double rav) {
         totalItemsSold = items;
-        totalRevenue = rev;
+        totalRevenue = rav;
     }
 
     int getTotalItemsSold() { return totalItemsSold; }
