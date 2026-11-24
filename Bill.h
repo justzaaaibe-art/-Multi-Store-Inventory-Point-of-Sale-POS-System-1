@@ -1,27 +1,31 @@
+#ifndef BILL_H
+#define BILL_H
+
 #include <iostream>
 using namespace std;
+
 class Bill {
 private:
- int bill_Id;
- double amount;
- double tax;
+    int billId;
+    double amount;
+    double tax;
+
 public:
-Bill(int id, double amt, double tex) {
-    bill_Id = id;
-    amount = amt;
-   tax = tex;
+    Bill(int id, double amt, double t) {
+        billId = id;
+        amount = amt;
+        tax = t;
     }
- ~Bill() {
+
+    ~Bill() {
         cout << "Bill closed.\n";
     }
-void setAmount(double amt) { amount = amt; }
-void setTax(double t) { tax = t; }
-int getBill_Id()
-{ 
-return bill_Id; 
-}
-    double getFinalTotal()
-{
-return amount + tax;
-}
+
+    void setAmount(double amt) { amount = amt; }
+    void setTax(double t) { tax = t; }
+
+    int getBillId() { return billId; }
+    double getFinalTotal() { return amount + tax; }
 };
+
+#endif
