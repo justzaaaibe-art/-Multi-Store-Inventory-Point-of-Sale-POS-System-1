@@ -1,32 +1,32 @@
-#ifndef PRODUCT_H
-#define PRODUCT_H
+#ifndef PAYMENT_H
+#define PAYMENT_H
 
 #include <iostream>
 #include <string>
 using namespace std;
 
-class Product {
+class Payment {
 private:
-    int id;
-    string name;
-    int stock;
+    int transactionId;
+    string method;
+    string status;
 
 public:
-    Product(int i, string n, int s) {
-        id = i;
-        name = n;
-        stock = s;
+    Payment(int tid, string m, string s) {
+        transactionId = tid;
+        method = m;
+        status = s;
     }
 
-    ~Product() {
-        cout << "Product record closed.\n";
+    ~Payment() {
+        cout << "Payment session ended.\n";
     }
 
-    void setStock(int s) { stock = s; }
+    void setStatus(string s) { status = s; }
 
-    int getId() { return id; }
-    string getName() { return name; }
-    int getStock() { return stock; }
+    int getTransactionId() { return transactionId; }
+    string getMethod() { return method; }
+    string getStatus() { return status; }
 };
 
 #endif
