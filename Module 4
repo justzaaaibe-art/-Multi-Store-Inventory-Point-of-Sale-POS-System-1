@@ -1,5 +1,3 @@
-#ifndef PAYMENT_H
-#define PAYMENT_H
 #include <iostream>
 #include <string>
 using namespace std;
@@ -24,4 +22,3 @@ public:
     string getMethod() { return method; }
     string getStatus() { return status; }
 };
-#endif
