@@ -2,12 +2,12 @@
 using namespace std;
 class Bill {
 private:
- int billId;
+ int bill_Id;
  double amount;
  double tax;
 public:
 Bill(int id, double amt, double t) {
-    billId = id;
+    bill_Id = id;
     amount = amt;
    tax = t;
     }
@@ -16,9 +16,9 @@ Bill(int id, double amt, double t) {
     }
 void setAmount(double amt) { amount = amt; }
 void setTax(double t) { tax = t; }
-int getBillId()
+int getBill_Id()
 { 
-return billId; 
+return bill_Id; 
 }
     double getFinalTotal()
 {
