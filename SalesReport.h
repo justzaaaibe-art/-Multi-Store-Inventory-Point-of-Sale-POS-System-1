@@ -1,8 +1,12 @@
+#ifndef SALESREPORT_H
+#define SALESREPORT_H
+
 #include <iostream>
 using namespace std;
+
 class SalesReport {
 private:
-    int totalItemSold;
+    int totalItemsSold;
     double totalRevenue;
 
 public:
@@ -15,11 +19,13 @@ public:
         cout << "SalesReport closed.\n";
     }
 
-    void setSales(int items, double rav) {
+    void setSales(int items, double rev) {
         totalItemsSold = items;
-        totalRevenue = rav;
+        totalRevenue = rev;
     }
 
     int getTotalItemsSold() { return totalItemsSold; }
     double getTotalRevenue() { return totalRevenue; }
 };
+
+#endif
