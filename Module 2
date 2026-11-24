@@ -6,10 +6,10 @@ private:
  double amount;
  double tax;
 public:
-Bill(int id, double amt, double t) {
+Bill(int id, double amt, double tex) {
     bill_Id = id;
     amount = amt;
-   tax = t;
+   tax = tex;
     }
  ~Bill() {
         cout << "Bill closed.\n";
