@@ -1,4 +1,10 @@
-#include<iostream>
+#include <iostream>
+#include <string>
+#include "Product.h"
+#include "Bill.h"
+#include "PurchaseOrder.h"
+#include "Payment.h"
+#include "SalesReport.h"
 using namespace std;
 
 int main() {
